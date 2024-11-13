@@ -47,7 +47,7 @@ Open new window browser and search localhost:5000
 
 [View results](#results)
 
-## :light_rail: PAAS Deploy with docker (Railway)
+## :light_rail: PAAS Deploy with docker (render)
 For its deployment in a PAAS we will rely on railway and its easy implementation thanks to its container management. 
 
 ![Railway Service](./public/img/railwayDeploy.png "Service")
