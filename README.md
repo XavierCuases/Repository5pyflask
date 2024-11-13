@@ -37,6 +37,8 @@ Once you clone the project, follow these steps:
 ### Download image
 
 [ImagenPY](https://hub.docker.com/r/xaviercuases/ejercicio5pyflask "click for visit")
+
+The link will be for the image to be able to download it
 ```
 docker pull xaviercuases/ejercicio5pyflask
 ```
