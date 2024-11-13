@@ -25,7 +25,6 @@ Once you clone the project, follow these steps:
    python app.py
 5. Once the server is running, open your browser and go to http://127.0.0.1:5000 to see the application.
 
-    ![LiveServerIconStart](./public/img/liverServer.png "Deploy page")
 
 ## :rocket: How to run in docker
 ### Pre-requisites
@@ -36,7 +35,7 @@ Once you clone the project, follow these steps:
 docker pull pamendeza/hellojavascript
 ```
 > [!IMPORTANT]
-> By default, the port mapping of 80 that belongs to the nginx server is placed with 8080 corresponding to the computer. If it is required to deploy it on a different port, only 8080 must be modified for another desired port.
+> Flask, by default, runs on port 5000 when using its built-in development server. This is intended for local development and testing purposes. If you need to change the port, Flask allows you to specify a different one when running the application.
 ### Run image
 ```
 docker run --name <NEWCONTAINERNAME> -d -p 8080:80 <IMAGENAME>
@@ -44,7 +43,7 @@ docker run --name <NEWCONTAINERNAME> -d -p 8080:80 <IMAGENAME>
 > [!TIP]
 > The name of the downloaded image must match the one placed in the previous command, for this you can verify it using the **docker images** command. Additionally, you must check that there is no other container with the same name as the one placed in the command.
 ### View the results
-Open new window browser and search localhost:8080
+Open new window browser and search localhost:5000
 
 [View results](#results)
 
