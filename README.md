@@ -2,7 +2,6 @@
 ## Results
 <p align="center">
    <img src="./Resultados/resultado1.png" alt="Hello from Python">
-Python">
 </p>
 
 This is a basic "Hello World" program built using the Flask framework. It serves a simple web page that manipulates the DOM and displays a typical "Hello World" message to the user.
