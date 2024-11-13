@@ -32,13 +32,13 @@ Once you clone the project, follow these steps:
 * DockerHub account
 ### Download image
 ```
-docker pull pamendeza/hellojavascript
+docker pull xaviercuases/ejercicio5pyflask:latest
 ```
 > [!IMPORTANT]
 > Flask, by default, runs on port 5000 when using its built-in development server. This is intended for local development and testing purposes. If you need to change the port, Flask allows you to specify a different one when running the application.
 ### Run image
 ```
-docker run --name <NEWCONTAINERNAME> -d -p 8080:80 <IMAGENAME>
+docker run --name <NEWCONTAINERNAME> -d -p 5000:5000 <IMAGENAME>
 ```
 > [!TIP]
 > The name of the downloaded image must match the one placed in the previous command, for this you can verify it using the **docker images** command. Additionally, you must check that there is no other container with the same name as the one placed in the command.
@@ -48,17 +48,33 @@ Open new window browser and search localhost:5000
 [View results](#results)
 
 ## :light_rail: PAAS Deploy with docker (render)
-For its deployment in a PAAS we will rely on railway and its easy implementation thanks to its container management. 
+For its deployment in a PAAS we will rely on Render and its easy implementation thanks to its container management. 
 
-![Railway Service](./public/img/railwayDeploy.png "Service")
+![Railway Service](./Resultados/render1.png "Service")
 
-The platform automatically uses our Dockerfile to build the container. 
+This project is deployed on Render, which supports multiple programming languages:
 
-![Build Container](./public/img/dockerFile.png "Build Configuration")
+Docker
+Elixir
+Go
+Node.js
+Python 3 (used in this project)
+Ruby
+Rust
+This project uses Python 3 to run a web application on Render. Simply select "Python 3" during deployment, connect your repository, and follow Render’s setup instructions.
+
+![Build Container](./Resultados/render2.png "Build Configuration")
 
 > [!IMPORTANT]
-> Next, the configuration that we must add is the generation of a domain along with the desired port, in this case the indicated thing would be to point to port 80 on which nginx is working
+> Next, This project is configured to deploy on Render with the following settings:
 
-![Generate Domain](./public/img/domain.png "Domain")
+Build Command: pip install -r requirements.txt – Installs dependencies.
+Pre-Deploy Command: (Optional) – For tasks like migrations (currently empty).
+Start Command: gunicorn app:app – Starts the app with Gunicorn.
+Auto-Deploy: No – Updates need manual deployment.
 
-[Hello World](https://jsproyectdocker-production.up.railway.app "click for visit")
+
+
+![Generate Domain](./Resultados/render3.png "Domain")
+
+[Hello World](https://repository5pyflask.onrender.com "click for visit")
