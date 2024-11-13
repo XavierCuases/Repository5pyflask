@@ -1,10 +1,7 @@
 # Hello world whit Python
 ## Results
 <p align="center">
-    <img src="./public/img/content.png" alt="Hello from Python">
-</p>
-<p align="center">
-    <img src="./public/img/result.png" alt="Result event">
+    <img src="./public/img/resultado1.png" alt="Hello from Python">
 </p>
 
 This is a basic "Hello World" program built using the Flask framework. It serves a simple web page that manipulates the DOM and displays a typical "Hello World" message to the user.
@@ -25,6 +22,7 @@ Once you clone the project, follow these steps:
    pip install -r requirements.txt
 3.   Inside the editor, open the app.py file, which contains the Flask app.
 4. Run the application with the following command
+   python app.py
 5. Once the server is running, open your browser and go to http://127.0.0.1:5000 to see the application.
 
     ![LiveServerIconStart](./public/img/liverServer.png "Deploy page")
