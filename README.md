@@ -30,9 +30,15 @@ Once you clone the project, follow these steps:
 ### Pre-requisites
 * Docker - DockerDesktop installed
 * DockerHub account
+
+### link image docker hub 
+
+
 ### Download image
+
+[ImagenPY](https://hub.docker.com/r/xaviercuases/ejercicio5pyflask "click for visit")
 ```
-docker pull xaviercuases/ejercicio5pyflask:latest
+docker pull xaviercuases/ejercicio5pyflask
 ```
 > [!IMPORTANT]
 > Flask, by default, runs on port 5000 when using its built-in development server. This is intended for local development and testing purposes. If you need to change the port, Flask allows you to specify a different one when running the application.
